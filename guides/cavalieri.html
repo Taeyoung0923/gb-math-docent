@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>카발리에리 원리 — 평면·입체 선택</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'IBM Plex Sans KR',sans-serif;background:#f3f0e9;color:#1c2733;
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:2rem 1.4rem;line-height:1.7}
+  .back{position:fixed;top:1rem;left:1rem;color:#b8893a;text-decoration:none;font-weight:600;
+    font-size:.9rem;padding:.4rem .8rem;border-radius:999px;background:#fff;border:1px solid #d9d2c4}
+  .eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#b8893a;
+    font-weight:600;margin-bottom:1rem}
+  h1{font-family:'Gowun Batang',serif;font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:.6rem;text-align:center}
+  .lead{color:#46586b;max-width:34rem;text-align:center;margin-bottom:2.2rem;font-size:.98rem}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:46rem;width:100%}
+  @media(max-width:560px){.pair{grid-template-columns:1fr}}
+  a.pick{display:block;background:#fbfaf6;border:1px solid #d9d2c4;border-left:4px solid #c98a2b;
+    border-radius:14px;padding:1.6rem 1.5rem;text-decoration:none;color:inherit;
+    box-shadow:0 8px 24px rgba(28,39,51,.08);transition:transform .18s ease,box-shadow .18s ease}
+  a.pick:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(28,39,51,.13)}
+  a.pick .ord{font-size:.74rem;letter-spacing:.04em;color:#b8893a;font-weight:600;text-transform:uppercase}
+  a.pick .nm{font-family:'Gowun Batang',serif;font-size:1.5rem;font-weight:700;margin:.3rem 0 .5rem}
+  a.pick .ds{font-size:.9rem;color:#46586b}
+  a.pick .go{margin-top:1rem;color:#c98a2b;font-weight:600;font-size:.86rem}
+  a.pick .go::after{content:" →"}
+  .seq{margin-top:1.8rem;font-size:.86rem;color:#46586b;text-align:center;max-width:34rem}
+  .seq b{color:#1c2733}
+</style>
+</head>
+<body>
+  <a href="../index.html" class="back">↑ 지도로</a>
+  <div class="eyebrow">칠곡 · 측정/입체 · 자매 한 쌍</div>
+  <h1>카발리에리 원리</h1>
+  <p class="lead">이 전시물은 평면과 입체, 두 형제로 이루어져 있습니다.
+  엔진(학생을 움직이는 버튼)이 서로 다르니, 가이드도 둘로 나뉩니다. 보실 쪽을 고르세요.</p>
+  <div class="pair">
+    <a class="pick" href="cavalieri_2d.html">
+      <div class="ord">먼저</div>
+      <div class="nm">평면 (2차원)</div>
+      <div class="ds">자로 직접 재기 — 밑변·높이를 손으로 재서 “안 변했네”를 확인하는 엔진</div>
+      <div class="go">평면 가이드 열기</div>
+    </a>
+    <a class="pick" href="cavalieri_3d.html" style="border-left-color:#3f8a6e">
+      <div class="ord">나중</div>
+      <div class="nm">입체 (3차원)</div>
+      <div class="ds">보이는 판 관찰 — 층층이 쌓인 단면을 눈으로 보고 짝맞추는 엔진</div>
+      <div class="go">입체 가이드 열기</div>
+    </a>
+  </div>
+  <p class="seq">권하는 순서는 <b>평면 → 입체</b>입니다. 손으로 재서 확인한 “단면이 같으면 전체가 같다”는 감각을, 입체에서 눈으로 다시 만나게 하는 흐름입니다.</p>
+</body>
+</html>
